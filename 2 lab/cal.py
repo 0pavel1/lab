@@ -19,7 +19,10 @@ def otv(data = Body()):
     elif sign == "-":
         return {"st": f"{num1} - {num2} = {num1 - num2}"}
     elif sign == "/":
-        return {"st": f"{num1} / {num2} = {num1 / num2}"}
+        if num2 != 0:
+            return {"st": f"{num1} / {num2} = {num1 / num2}"}
+        else:
+            return {"st": f"На ноль делить нельзя!"}
     elif sign == "*":
         return {"st": f"{num1} * {num2} = {num1 * num2}"}
     else:
