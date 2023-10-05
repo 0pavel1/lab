@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_items():
-    return FileResponse("2.html")
+    return FileResponse("1.html")
 
 
 @app.post("/otv")
