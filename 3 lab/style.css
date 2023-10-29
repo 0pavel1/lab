@@ -1,3 +1,68 @@
 body {
-
+    background: #000;
+    display: flex;
 }
+.hide {
+    display: none !important;
+}
+.container {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4C57B8;
+}
+.menu__btn{
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.info__fullname{
+    color: white;
+    font-size: 10rem;
+    margin-top:0px;
+    margin-bottom:30px;
+}
+.info__nickname{
+    color: white;
+    font-size: 3.5rem;
+    display: inline-block;
+    text-decoration: none;
+    align-self:center;
+    margin-left:30px;
+}
+.link{
+    display: flex;
+    margin-bottom: 20px;
+}
+.portfolio{
+    width:100px;
+    align-self: flex-end;
+    position: fixed;
+    right:25%;
+    bottom: 10%;
+}
+.portfolio__btn{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    display: flex;
+}
+#port{
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    color: #4C57B8;
+    position: relative;
+    top: 8px;
+    margin-right: -157px;
+}
+
