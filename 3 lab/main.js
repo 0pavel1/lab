@@ -1,9 +1,17 @@
-const menuBtn = document.querySelector(".menu__btn");
-const classes = document.querySelector(".menu__list").classList;
-menuBtn.addEventListener("click", function() {classes.toggle("hide");});
-
-const portBtn = document.querySelector(".portfolio__btn");
-const classesCont = document.querySelector(".container").classList;
-const classesPort = document.querySelector(".containerPort").classList;
-portBtn.addEventListener("click", function() {classesCont.toggle("hide");classesPort.toggle("hide");});
+function hide(object,trigger) {
+    const Btn = document.querySelector(trigger);
+    const Block = document.querySelector(object);
+    Btn.addEventListener("click", function() {Block.classList.toggle("hide");})
+    }
+hide(".menu__list", ".menu__btn")
+document.querySelector(".portfolio__btn").addEventListener("click", function() {document.getElementById("B").style.background = "#FFF";})
+hide(".container", ".portfolio__btn")
+hide(".containerPort", ".portfolio__btn")
+document.querySelector(".portfolio__btn").addEventListener("click", function() {document.querySelector(".portfolio__btn").classList.toggle("hide");})
+document.querySelector(".portfolio__btn").addEventListener("click", function() {document.querySelector(".info__btn").classList.toggle("hide");})
+document.querySelector(".info__btn").addEventListener("click", function() {document.getElementById("B").style.background = "#000";})
+hide(".container", ".info__btn")
+hide(".containerPort", ".info__btn")
+document.querySelector(".info__btn").addEventListener("click", function() {document.querySelector(".portfolio__btn").classList.toggle("hide");})
+document.querySelector(".info__btn").addEventListener("click", function() {document.querySelector(".info__btn").classList.toggle("hide");})
 
