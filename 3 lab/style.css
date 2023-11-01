@@ -23,10 +23,7 @@
 }
 
 .containerPort{
-    position: absolute;
-    top:15%;
     animation: pageAlt-showing .3s;
-    font-family: 'Inter', sans-serif;
     color: #4C57B8;
     font-size: 30px;
 }
@@ -84,6 +81,7 @@
     line-height: 16px;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 @keyframes menu-showing {
@@ -114,8 +112,8 @@
     margin-bottom: 20px;
 }
 
-.portfolio__btn{
-
+#portfolio{
+    outline: none;
     align-self: flex-end;
     position: fixed;
     right:10%;
@@ -123,14 +121,14 @@
     animation: page-showing .6s;
 }
 
-.portfolio__btn, .info__btn {
+#portfolio, #info {
     background: transparent;
     border: 0;
     padding: 0;
     display: flex;
 }
 
-.info__btn {
+#info {
     width:150px;
     align-self: flex-end;
     position: fixed;
@@ -178,4 +176,6 @@ img {
     display: flex;
     align-items: center;
 }
-
+.worksList{
+    display: flex;
+}
